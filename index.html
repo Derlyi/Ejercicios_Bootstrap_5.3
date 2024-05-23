@@ -27,7 +27,7 @@
               <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Categorías</a>
+              <a class="nav-link" href="categorias.html">Categorías</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -35,8 +35,10 @@
                 Cuenta
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
-                <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar
+                    Sesión</a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2">Registrarse</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -44,7 +46,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Contactos</a>
+              <a class="nav-link" href="contacto.html">Contactos</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -56,14 +58,116 @@
     </nav>
     <!-- Content fin menu -->
 
+    <!-- Modal Inicio Sesion-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <!-- Formulario inicio sesion -->
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            </form>
+            <!-- Fin Formulario inicio sesion -->
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Ingresar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Fin Modal Inicio Sesion -->
+
+    <!-- Modal registro -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Registrarse</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <!-- Formulario registro -->
+            <form>
+              <div class="mb-3 ">
+                <label for="disabledSelect" class="form-label">Tipo de Documento</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Seleccionar</option>
+                  <option>Cedula de Ciudadania</option>
+                  <option>Tarjeta de Identidad</option>
+                  <option>Permiso Especial de Permanencia</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Numero de Documento</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Nombres</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Apellidos</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Email</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Celular</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            </form>
+            <!-- Fin Formulario registro -->
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Registrarse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin Modal registro -->
+
     <!-- Content carrusel -->
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -82,11 +186,13 @@
           <img src="img/Banner5.webp" class="d-block w-100" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -102,7 +208,7 @@
           <img src="img/cat1.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title text-center">Baterías</h5>
-            
+
           </div>
         </div>
       </div>
@@ -111,7 +217,7 @@
           <img src="img/cat2.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title text-center">SmartWatch</h5>
-            
+
           </div>
         </div>
       </div>
@@ -120,7 +226,7 @@
           <img src="img/cat3.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title text-center">Auriculares</h5>
-            
+
           </div>
         </div>
       </div>
@@ -129,7 +235,7 @@
           <img src="img/cat4.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title text-center">Entretenimiento</h5>
-            
+
           </div>
         </div>
       </div>
@@ -160,7 +266,7 @@
 
     <!-- Content forma de envio -->
     <div class="row  row-cols-1 row-cols-md-3 py-5">
-    
+
       <div class="row g-0">
         <div class="col-md-4">
           <img src="img/estrella.webp" class="img-fluid rounded-start" alt="...">
@@ -181,7 +287,8 @@
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title"><b>Envíos a todo Colombia</b></h5>
-            <p class="card-text">Trabajamos de la mano con las transportadoras para que tus pedidos lleguen lo antes posible.</p>
+            <p class="card-text">Trabajamos de la mano con las transportadoras para que tus pedidos lleguen lo antes
+              posible.</p>
           </div>
         </div>
       </div>
@@ -205,45 +312,45 @@
     <h2 class="text-center py-4">PRODUCTOS DESTACADOS</h2>
 
     <div class="text-center row row-cols-1 row-cols-md-4 g-4 py-4">
-    <div class="card">
-      <img src="img/Combo1.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title"><b>Combo No. 1</b></h5>
-        <p class="card-text">SmartWatch + Diademas</p>
-        <p class="card-text"><big><b>$300.000</b></big></p>
-        <a href="#" class="btn btn-danger">Seleccionar</a>
+      <div class="card">
+        <img src="img/Combo1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Combo No. 1</b></h5>
+          <p class="card-text">SmartWatch + Diademas</p>
+          <p class="card-text"><big><b>$300.000</b></big></p>
+          <a href="#" class="btn btn-danger">Seleccionar</a>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="img/Proyector1.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title"><b>Combo No. 2</b></h5>
-        <p class="card-text">Proyector + Control mini</p>
-        <p class="card-text"><big><b>$500.000</b></big></p>
-        <a href="#" class="btn btn-danger">Seleccionar</a>
+      <div class="card">
+        <img src="img/Proyector1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Combo No. 2</b></h5>
+          <p class="card-text">Proyector + Control mini</p>
+          <p class="card-text"><big><b>$500.000</b></big></p>
+          <a href="#" class="btn btn-danger">Seleccionar</a>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="img/smartwatch1.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title"><b>Combo No. 3</b></h5>
-        <p class="card-text">SmartWatch + Mini Audifonos</p>
-        <p class="card-text"><big><b>$200.000</b></big></p>
-        <a href="#" class="btn btn-danger">Seleccionar</a>
+      <div class="card">
+        <img src="img/smartwatch1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Combo No. 3</b></h5>
+          <p class="card-text">SmartWatch + Mini Audifonos</p>
+          <p class="card-text"><big><b>$200.000</b></big></p>
+          <a href="#" class="btn btn-danger">Seleccionar</a>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="img/router1.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title text-center"><b>Combo No. 4</b></h5>
-        <p class="card-text">Router de Internet</p>
-        <p class="card-text"><big><b>$150.000</b></big></p>
-        <a href="#" class="btn btn-danger">Seleccionar</a>
+      <div class="card">
+        <img src="img/router1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center"><b>Combo No. 4</b></h5>
+          <p class="card-text">Router de Internet</p>
+          <p class="card-text"><big><b>$150.000</b></big></p>
+          <a href="#" class="btn btn-danger">Seleccionar</a>
+        </div>
       </div>
-    </div>
     </div>
     <!-- Content fin productos destacados -->
 
