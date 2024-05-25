@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicios Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Content menu -->
+
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Tienda JS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categorias.html">Categorías</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Cuenta
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Iniciar
+                                        Sesión</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">Registrarse</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="ayuda.html">Ayuda</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="contacto.html">Contactos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar Aquí" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Content fin menu -->
+
+        <!-- Content titulo -->
+        <h2 class="text-center display-4 py-4"><strong>AYUDA</strong></h2>
+        <!-- Content fin titulo -->
+
+        <!-- Content accordion -->
+        <div class="accordion text-center" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <strong>¿Cómo registrarme?</strong>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Para registrarse en la Tienda JS, lo primero que debes hacer es ir al menú y seleccionar
+                            <strong>Cuenta</strong>. Allí se elegiremos la opción <strong>Registrarse</strong>.</p>
+                        <img src="img/registrarse.png" class="img-fluid" alt="...">
+                        <p>Luego llenas la información del formulario.</p>
+                        <img src="img/formulario-registro.png" class="img-fluid" width="500px" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>¿Cómo iniciar sesión?</strong>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Para iniciar sesión en la Tienda JS, lo primero que debes hacer es ir al menú y seleccionar
+                            <strong>Cuenta</strong>. Allí se elegiremos la opción <strong>Iniciar Sesión</strong>.</p>
+                        <img src="img/registrarse.png" class="img-fluid" alt="...">
+                        <p>Luego llenas la información del formulario.</p>
+                        <img src="img/formulario-inicio-sesion.png" class="img-fluid" width="500px" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <strong>¿Cómo puedo encontrar el producto que necesito?</strong>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Para buscar el producto que desees en la Tienda JS, lo primero que debes hacer es ir al menú y nos dirigirte a la
+                            <strong>Barra de Navegación</strong>.</p>
+                        <img src="img/registrarse.png" class="img-fluid" alt="...">
+                        <p>Allí buscas el producto que quieras de una manera más rápida.</p>
+                        <img src="img/buscar.png" class="img-fluid" width="500px" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <strong>Contacto</strong>
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Para tener información de Contacto de la Tienda JS, lo primero que debes hacer es ir al menú y seleccionar
+                            <strong>Contactos</strong>.</p>
+                        <img src="img/registrarse.png" class="img-fluid" alt="...">
+                        <p>La Tienda nos dirigirá a la página correspondiente.</p>
+                        <img src="img/contacto.png" class="img-fluid" width="500px" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <strong>¿Cómo puedo visualizar todos los productos?</strong>
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Para encontrar todos los productos de la Tienda JS, lo primero que debes hacer es ir al menú y seleccionar
+                            <strong>Categorías</strong>.</p>
+                        <img src="img/registrarse.png" class="img-fluid" alt="...">
+                        <p>La Tienda nos dirigirá a la página correspondiente, el cual nos mostrará los productos por difeferentes categorías u secciones.</p>
+                        <img src="img/categorias.png" class="img-fluid" width="500px" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <strong>¿Dónde encuentro los productos más destacados?</strong>
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Para encontrar los productos destacados de la Tienda JS, nos dirigiremos a la parte final de la página, la cual nos mostrará la información pertinente.</p>
+                        <img src="img/destacados.png" class="img-fluid" width="500px" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content fin accordion -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Content footer -->
+        <footer class="bg-dark text-light text-center py-2">
+            <p>Diseñado por Análisis y Desarrollo de Software Ficha No. 2670687</p>
+            <p>&copy; 2024 Tienda JS</p>
+        </footer>
+        <!-- Content fin footer -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
